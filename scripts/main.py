@@ -944,7 +944,7 @@ def process_account(idx: int, email: str, password: str, tg_token: str, tg_chat:
 # ====================== 账号加载 ======================
 def load_accounts() -> List[Tuple[str, str]]:
     accounts = []
-    for i in range(1, 6):
+    for i in range(1, 11):
         raw = os.environ.get(f"WISPBYTE_{i}")
         if not raw:
             continue
